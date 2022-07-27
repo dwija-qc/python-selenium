@@ -29,24 +29,24 @@ class tugas(unittest.TestCase):
 
         self.assertIn('Selamat', response_data)
 
-    # def test_a_login_success(self):
+    def test_a_login_success(self):
          
-    #      # steps
-    #      browser = self.browser
-    #      browser.get("https://myappventure.herokuapp.com/login")
-    #      time.sleep(3)
-    #      browser.find_element(By.NAME,"email").send_keys("dwi31@gmail.com")
-    #      time.sleep(1)
-    #      browser.find_element(By.NAME,"password").send_keys("dwi123")
-    #      time.sleep(1)
-    #      browser.find_element(By.TAG_NAME,"button").click()
+         # steps
+         browser = self.browser
+         browser.get("https://myappventure.herokuapp.com/login")
+         time.sleep(3)
+         browser.find_element(By.NAME,"email").send_keys("dwi31@gmail.com")
+         time.sleep(1)
+         browser.find_element(By.NAME,"password").send_keys("dwi123")
+         time.sleep(1)
+         browser.find_element(By.TAG_NAME,"button").click()
 
-    #      browser.find_element(By.XPATH, '//button[text()="Masuk"]').click()
-    #      time.sleep(1)
+         browser.find_element(By.XPATH, '//button[text()="Masuk"]').click()
+         time.sleep(1)
 
-    #      response_data = browser.find_element(By.ID,"__next")
+         response_data = browser.find_element(By.ID,"__next")
 
-    #      self.assertIn('Anda', response_data)
+         self.assertIn('Anda', response_data)
 
     def tearDown(self): 
         self.browser.close() 
