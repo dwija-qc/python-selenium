@@ -12,16 +12,16 @@ class tugas(unittest.TestCase):
     #1 Register Sucess (Positive)
     def test_a_success_register(self): 
         # steps
-        browser = self.browser #buka web browser
-        browser.get("https://myappventure.herokuapp.com/registration") # buka situs
+        browser = self.browser 
+        browser.get("https://myappventure.herokuapp.com/registration") 
         time.sleep(3)
-        browser.find_element(By.NAME,"username").send_keys("dwi55") # isi username
+        browser.find_element(By.NAME,"username").send_keys("dwi55") 
         time.sleep(1)
-        browser.find_element(By.NAME,"email").send_keys("dwi55@gmail.com") # isi email
+        browser.find_element(By.NAME,"email").send_keys("dwi55@gmail.com") 
         time.sleep(1)
-        browser.find_element(By.NAME,"password").send_keys("dwi123")   # isi password
+        browser.find_element(By.NAME,"password").send_keys("dwi123") 
         time.sleep(1)
-        browser.find_element(By.XPATH, '//button[text()="Daftar sekarang"]').click() # klik tombol daftar
+        browser.find_element(By.XPATH, '//button[text()="Daftar sekarang"]').click() 
         time.sleep(3)
 
         # validasi
@@ -34,15 +34,15 @@ class tugas(unittest.TestCase):
 
         # steps
         browser = self.browser #buka web browser
-        browser.get("https://myappventure.herokuapp.com/registration") # buka situs
+        browser.get("https://myappventure.herokuapp.com/registration")
         time.sleep(3)
-        browser.find_element(By.NAME,"username").send_keys("dwi50") # isi username
+        browser.find_element(By.NAME,"username").send_keys("dwi50") 
         time.sleep(1)
-        browser.find_element(By.NAME,"email").send_keys("dwi50@gmail.com") # isi email
+        browser.find_element(By.NAME,"email").send_keys("dwi50@gmail.com")
         time.sleep(1)
-        browser.find_element(By.NAME,"password").send_keys("dwi123")   # isi password
+        browser.find_element(By.NAME,"password").send_keys("dwi123")
         time.sleep(1)
-        browser.find_element(By.XPATH, '//button[text()="Daftar sekarang"]').click() # klik tombol daftar
+        browser.find_element(By.XPATH, '//button[text()="Daftar sekarang"]').click()
         time.sleep(3)
 
         # validasi
@@ -56,15 +56,15 @@ class tugas(unittest.TestCase):
 
         # steps
         browser = self.browser #buka web browser
-        browser.get("https://myappventure.herokuapp.com/registration") # buka situs
+        browser.get("https://myappventure.herokuapp.com/registration")
         time.sleep(3)
-        browser.find_element(By.NAME,"username").send_keys("dwi88") # isi username
+        browser.find_element(By.NAME,"username").send_keys("dwi88") 
         time.sleep(1)
-        browser.find_element(By.NAME,"email").send_keys("dwi88@gmail.com") # isi email
+        browser.find_element(By.NAME,"email").send_keys("dwi88@gmail.com")
         time.sleep(1)
-        browser.find_element(By.NAME,"password").send_keys("")   # isi password
+        browser.find_element(By.NAME,"password").send_keys("")
         time.sleep(1)
-        browser.find_element(By.XPATH, '//button[text()="Daftar sekarang"]').click() # klik tombol daftar
+        browser.find_element(By.XPATH, '//button[text()="Daftar sekarang"]').click() 
         time.sleep(3)
 
         # validasi
